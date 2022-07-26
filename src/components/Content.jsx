@@ -1,6 +1,6 @@
 import React from 'react';
 import wave from '../img/Emoji.png';
-import me from '../img/me.png';
+import me from '../img/me.jpg';
 
 function Content() {
   return (
@@ -24,13 +24,14 @@ function Content() {
           <button type="submit" className="cta hire">
             Hire me
           </button>
-          <button type="submit" className="cta hire">
+          <button type="submit" className="cta project">
             Veja meu portfólio
           </button>
         </div>
       </main>
       <figure>
-        <img src={me} alt="João Lucas" width={400} className="me-img" />
+        <img src={me} alt="João Lucas" width={350} className="me-img" />
+        <div className="img-bg" />
       </figure>
     </div>
   );
