@@ -69,114 +69,10 @@ export default createGlobalStyle`
   }
 
   p{
-    margin-bottom: 3rem;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 4rem;
-  }
-
-  /* h1 {
-    font-size: 5rem;
-  }
-
-  p {
-    font-size: 3rem;
-    font-weight: medium;
-    color: rgb(83, 83, 83);
-  } */
-
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .buttons {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    margin-top: 2rem;
-  }
-
-  .cta {
-    font-weight: bold;
-    padding: 1rem 2rem;
-  }
-
-  .hire {
-    background-color: white;
-    border: 0.2rem solid black;
-  }
-
-  .hire:hover {
-    background-color: black;
-    border: 0.2rem solid black;
-    color: white;
-  }
-
-  .project {
-    background-color: black;
-    border: 0.2rem solid black;
-    color: white;
-  }
-
-  .project:hover {
-    background-color: white;
-    color: black;
-  }
-
-  figure {
-    position: relative;
-  }
-
-  .me-img {
-    border: 0.5rem solid black;
-    border-bottom-left-radius: 50%;
-  }
-
-  .img-bg {
-    width: 35rem;
-    height: 45rem;
-    background-color: black;
-    position: absolute;
-    top: -1rem;
-    left: 2rem;
-    border-bottom-left-radius: 50%;
-    z-index: -1;
-  }
-
-  @media screen and (min-width: 800px) {
-    .content {
-      flex-direction: row;
-      margin: 8rem;
-    }
-
-    h1 {
-      font-size: 7rem;
-    }
-
-    .cta {
-      padding: 2rem 3rem;
-      font-size: 1.6rem;
-    }
+    margin-bottom: 1rem;
   }
 
   // nav
-  .main-content{
-    max-width: 160rem;
-    margin: 0 auto;
-    padding: 10rem ${colors.gap};
-  }
-
-  .white-bg{
-    background-color: ${colors.whiteColor};
-    color: ${colors.primaryColor} ;
-  }
-
   .menu {
     z-index: 1;
     position: fixed;
@@ -184,7 +80,7 @@ export default createGlobalStyle`
     left: 0;
     right: 0;
     width: 100%;
-    border-bottom: 0.1rem solid var(--light-gray-color);
+    border-bottom: 0.1rem solid ${colors.lightGrayColor};
   }
 
   .menu-content {
@@ -197,7 +93,7 @@ export default createGlobalStyle`
 
   .menu h1 {
     font-size: 2.3rem;
-    color: var(--primary-color);
+    color: ${colors.primaryColor};
   }
 
   .menu h1 a {
@@ -213,7 +109,7 @@ export default createGlobalStyle`
     display: block;
     padding: 2rem;
     font-size: 1.8rem;
-    color: var(--primary-color);
+    color: ${colors.primaryColor};
     position: relative;
   }
 
@@ -224,7 +120,7 @@ export default createGlobalStyle`
     left: 50%;
     width: 0;
     height: 0.2rem;
-    background: var(--secondary-color);
+    background: ${colors.secondaryColor};
     transition: all 300ms ease-in-out;
   }
 
@@ -233,4 +129,52 @@ export default createGlobalStyle`
     left: 25%;
   }
 
+  .menu-spacing{
+    height: 8.8rem;
+  }
+
+  .main-bg{
+    background-image: url('../img/quantum-gradient.svg');
+    background-size: cover;
+    background-position: center center;
+    color: ${colors.primaryColor};
+  }
+  .white-bg{
+    background-color: ${colors.whiteColor};
+    color:${colors.primaryColor} ;
+  }
+  .main-content{
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 1rem ${colors.gap};
+  }
+
+  .intro-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 8.8rem);
+  }
+
+  figure {
+    position: relative;
+  }
+
+  .img-me{
+    border-bottom-left-radius: 50%;
+    border: 0.5rem solid black;
+  }
+
+  .img-black{
+    width: 35rem;
+    height: 45rem;
+    background-color: black;
+    position: absolute;
+    top: -1rem;
+    left: 2rem;
+    border-bottom-left-radius: 50%;
+    z-index: -1;
+
+  }
 `;
