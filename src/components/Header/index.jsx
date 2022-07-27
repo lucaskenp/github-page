@@ -1,36 +1,29 @@
 import React from 'react';
-import { Nav } from './styled';
+// import { Nav } from './styled';
 
-export default function Header() {
+function Header() {
   return (
     <aside className="menu white-bg">
       <div className="main-content menu-content">
         <h1>
-          <a href="#home">LOGO</a>
+          <a href="#home">Portfólio</a>
         </h1>
-        <Nav>
+        <nav>
           <ul>
             <li>
-              <a href="#intro">intro</a>
+              <a href="#about-me">Sobre mim</a>
             </li>
             <li>
-              <a href="#grid-one">grid-one</a>
+              <a href="#projects">Projetos</a>
             </li>
             <li>
-              <a href="#gallery">gallery</a>
-            </li>
-            <li>
-              <a href="#grid-two">grid-two</a>
-            </li>
-            <li>
-              <a href="#pricing">pricing</a>
-            </li>
-            <li>
-              <a href="#contact">contact</a>
+              <a href="#contact">Contatos</a>
             </li>
           </ul>
-        </Nav>
+        </nav>
       </div>
     </aside>
   );
 }
+
+export default Header;
