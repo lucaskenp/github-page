@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Content from './components/Content';
 import GlobalStyles from './styles/GlobalStyles';
 import MenuSpacing from './components/MenuSpacing';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <MenuSpacing />
       <Content />
+      <Projects />
     </>
   );
 }

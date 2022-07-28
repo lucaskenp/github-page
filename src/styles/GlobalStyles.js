@@ -74,7 +74,7 @@ export default createGlobalStyle`
 
   // nav
   .menu {
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
@@ -134,15 +134,15 @@ export default createGlobalStyle`
   }
 
   .main-bg{
-    background-image: url('../img/quantum-gradient.svg');
-    background-size: cover;
-    background-position: center center;
-    color: ${colors.primaryColor};
+    background-color: #212121;
+    color: ${colors.lightGrayColor};
   }
+
   .white-bg{
     background-color: ${colors.whiteColor};
     color:${colors.primaryColor} ;
   }
+
   .main-content{
     max-width: 140rem;
     margin: 0 auto;
@@ -150,20 +150,34 @@ export default createGlobalStyle`
   }
 
   .intro-content{
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: calc(100vh - 8.8rem);
   }
 
+  .section {
+    min-height: calc(100vh - 8.8rem);
+  }
+
+  .section p {
+    font-weight: bold;
+    color: ${colors.lightGrayColor};
+  }
+
+  .portfolio-text{
+    text-align: center;
+  }
+
   figure {
     position: relative;
+    z-index: 1;
   }
 
   .img-me{
     border-bottom-left-radius: 50%;
     border: 0.5rem solid black;
+    z-index: -1;
   }
 
   .img-black{
@@ -174,7 +188,22 @@ export default createGlobalStyle`
     top: -1rem;
     left: 2rem;
     border-bottom-left-radius: 50%;
-    z-index: -1;
+    z-index: -2;
 
+  }
+
+  .potfolio-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .bg{
+    background: ${colors.lightGrayColor};
+    width: 35rem;
+    height: 35rem;
+    border-radius: 20px;
   }
 `;

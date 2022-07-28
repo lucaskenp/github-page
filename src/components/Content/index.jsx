@@ -4,7 +4,7 @@ import me from '../../img/me.jpg';
 
 function Content() {
   return (
-    <section id="home" className="main-bg section">
+    <section className="main-bg section">
       <div className="intro-content main-content">
         <div className="intro-text-content">
           <h1>
