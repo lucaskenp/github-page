@@ -55,12 +55,12 @@ export default createGlobalStyle`
   }
 
   h5 {
-    font-size: 4rem;
+    font-size: 2rem;
     text-transform: uppercase;
   }
 
   h6 {
-    font-size: 3.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
   }
 
